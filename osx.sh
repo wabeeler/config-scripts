@@ -17,6 +17,7 @@ brew install nmap
 brew install vim --override-system-vi
 brew install irssi
 brew install git
+brew install reattach-to-user-namespace
 
 
 #brew cask
