@@ -8,52 +8,49 @@ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 
 brew install tmux
 brew install kdiff3
-brew install ctags
-brew install maven
+#brew install ctags
+#brew install maven
 brew install git
 brew install tree
 brew install wget
 brew install nmap
 brew install vim --override-system-vi
-brew install irssi
-brew install git
+# brew install irssi
+# not sure why this would be needed twice
+# brew install git
 brew install reattach-to-user-namespace
 
 
 #brew cask
 brew install caskroom/cask/brew-cask
 brew cask install google-chrome
-brew cask install spectacle
-brew cask install evernote
+brew cask install bettertouchtool
 brew cask install flux
-brew cask install crashplan
-brew cask install boot2docker
+#brew cask install boot2docker
 brew cask install virtualbox
 brew cask install vagrant
 brew cask install iterm2
-brew cask install transmission
-brew cask install vlc
 
 # dotfiles
 git clone git://github.com/andsens/homeshick.git $HOME/.homesick/repos/homeshick
-$HOME/.homesick/repos/homeshick/bin/homeshick clone bskarda/osx-dotfiles
-$HOME/.homesick/repos/homeshick/bin/homeshick link osx-dotfiles
+$HOME/.homesick/repos/homeshick/bin/homeshick clone wabeeler/dotfiles
+$HOME/.homesick/repos/homeshick/bin/homeshick link dotfiles
 
 # System properties
-printf "System - Disable boot sound effects\n"
-sudo nvram SystemAudioVolume=" "
+#printf "System - Disable boot sound effects\n"
+#sudo nvram SystemAudioVolume=" "
 
 printf "System - Reveal IP address, hostname, OS version, etc. when clicking the login window clock\n"
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 
-printf "System - Disable automatic termination of inactive apps\n"
-defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
+#printf "System - Disable automatic termination of inactive apps\n"
+#defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
 
 printf "System - Expand save panel by default\n"
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 
-printf "System - Disable the 'Are you sure you want to open this application?' dialog\n"
-defaults write com.apple.LaunchServices LSQuarantine -bool false
+#printf "System - Disable the 'Are you sure you want to open this application?' dialog\n"
+#defaults write com.apple.LaunchServices LSQuarantine -bool false
 
 printf "System - Require password immediately after sleep or screen saver begins\n"
 defaults write com.apple.screensaver askForPassword -int 1
@@ -110,11 +107,11 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 printf "Finder - Use list view in all Finder windows\n"
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
-printf "Finder - Allow quitting via ⌘ + Q; doing so will also hide desktop icons\n"
-defaults write com.apple.finder QuitMenuItem -bool true
+#printf "Finder - Allow quitting via ⌘ + Q; doing so will also hide desktop icons\n"
+#defaults write com.apple.finder QuitMenuItem -bool true
 
-printf "Finder - Disable the warning before emptying the Trash\n"
-defaults write com.apple.finder WarnOnEmptyTrash -bool false
+#printf "Finder - Disable the warning before emptying the Trash\n"
+#defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 printf "Finder - Allow text selection in Quick Look\n"
 defaults write com.apple.finder QLEnableTextSelection -bool true
