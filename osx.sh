@@ -22,7 +22,6 @@ brew install reattach-to-user-namespace
 
 
 #brew cask
-brew install caskroom/cask/brew-cask
 brew cask install google-chrome
 brew cask install bettertouchtool
 brew cask install flux
