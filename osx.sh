@@ -35,6 +35,12 @@ git clone git://github.com/andsens/homeshick.git $HOME/.homesick/repos/homeshick
 $HOME/.homesick/repos/homeshick/bin/homeshick clone wabeeler/dotfiles
 $HOME/.homesick/repos/homeshick/bin/homeshick link dotfiles
 
+$HOME/.homesick/repos/homeshick/bin/homeshick clone gmarik/Vundle.vim
+$HOME/.homesick/repos/homeshick/bin/homeshick clone tmux-plugins/tpm
+
+# iTerm2 ColorSchemes
+$HOME/.homesick/repos/homeshick/bin/homeshick clone mbadolato/iTerm2-Color-Schemes.git
+
 # System properties
 #printf "System - Disable boot sound effects\n"
 #sudo nvram SystemAudioVolume=" "
