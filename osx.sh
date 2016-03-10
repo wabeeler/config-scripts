@@ -18,8 +18,8 @@ brew install vim --override-system-vi
 # brew install irssi
 # not sure why this would be needed twice
 # brew install git
-brew install reattach-to-user-namespace
-
+#brew install reattach-to-user-namespace
+brew install the_silver_searcher
 
 #brew cask
 brew cask install google-chrome
