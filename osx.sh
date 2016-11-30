@@ -22,13 +22,13 @@ brew install vim --override-system-vi
 brew install the_silver_searcher
 
 #brew cask
+brew cask install iterm2
 brew cask install google-chrome
 brew cask install bettertouchtool
-brew cask install flux
+#brew cask install flux
 #brew cask install boot2docker
 brew cask install virtualbox
-brew cask install vagrant
-brew cask install iterm2
+#brew cask install vagrant
 
 # dotfiles
 git clone git://github.com/andsens/homeshick.git $HOME/.homesick/repos/homeshick
