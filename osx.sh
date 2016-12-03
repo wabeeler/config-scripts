@@ -41,6 +41,10 @@ $HOME/.homesick/repos/homeshick/bin/homeshick clone tmux-plugins/tpm
 # iTerm2 ColorSchemes
 $HOME/.homesick/repos/homeshick/bin/homeshick clone mbadolato/iTerm2-Color-Schemes.git
 
+# powerline fonts
+$HOME/.homesick/repos/homeshick/bin/homeshick clone powerline/fonts
+ln -s $HOME/.homeshick/repos/fonts ~/powerline-fonts
+
 # System properties
 #printf "System - Disable boot sound effects\n"
 #sudo nvram SystemAudioVolume=" "
