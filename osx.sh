@@ -14,7 +14,8 @@ brew install git
 brew install tree
 brew install wget
 brew install nmap
-brew install vim --override-system-vi
+brew install vim
+brew install lastpass-cli
 # brew install irssi
 # not sure why this would be needed twice
 # brew install git
@@ -27,7 +28,7 @@ brew cask install google-chrome
 brew cask install bettertouchtool
 #brew cask install flux
 #brew cask install boot2docker
-brew cask install virtualbox
+#brew cask install virtualbox
 #brew cask install vagrant
 
 # dotfiles
