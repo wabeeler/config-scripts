@@ -15,7 +15,7 @@ brew install tree
 brew install wget
 brew install nmap
 brew install vim
-brew install lastpass-cli
+# brew install lastpass-cli
 # brew install irssi
 # not sure why this would be needed twice
 # brew install git
@@ -23,9 +23,9 @@ brew install lastpass-cli
 brew install the_silver_searcher
 
 #brew cask
-brew cask install iterm2
-brew cask install google-chrome
-brew cask install bettertouchtool
+brew install --cask iterm2
+brew install --cask google-chrome
+brew install --cask bettertouchtool
 #brew cask install flux
 #brew cask install boot2docker
 #brew cask install virtualbox
